@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/controller.js"></script>
+<body>
+
+
+<div ng-app="myApp">
+
+    <!DOCTYPE html>
+<html>
     <head>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -7,10 +16,9 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Angular! -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.14/angular.min.js"></script>
+
 
         <title>Fenrir's Page</title>
 
@@ -32,6 +40,10 @@
               padding: 25px;
             }
 
+            [ng\:cloak], [ng-cloak], .ng-cloak {
+              display: none;
+             }
+
         </style>
 
     </head>
@@ -39,7 +51,7 @@
 
     <div class="jumbotron">
       <div class="container text-center">
-        <h1>Home</h1>  </div>
+        <h1>Projects</h1>  </div>
     </div>
 
     <div class="row">
@@ -70,10 +82,33 @@
         </div>
     </div>
 
-    <div>
-        <h2 class="text-center">Irregularly, I make stuff.</h2>
-    </div>
+    <div class="row" >
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img ng-src="{{image_src}}" alt="Polarity">
+      <div class="caption">
+        <h3>Polarity</h3>
+        <pre>Polarity is a Lovecraft inspired sidescrolling
+platformer written in Java. Dive into unravelling
+layers of reality and uncover new powers, and
+dark secrets...</pre>
 
+        <p ng-model="thumbnail" ng-change="changePicture(thumbnail)" ng-init="image_src = 'img/Polarity.png'">
+          <button ng-click="image_src = 'img/Polarity.png'">1</button>
+          <button ng-click="image_src = 'img/Polarity1.png'">2</button>
+          <button ng-click="image_src = 'img/Polarity2.png'">3</button>
+          <button ng-click="image_src = 'img/Polarity3.png'">4</button>
+        </p>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+</div>
 
 
 
