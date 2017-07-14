@@ -2,79 +2,108 @@
 <html>
     <head>
         <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.14/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index-style.css">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 
-        <title>Fenrir's Page</title>
-
-        <style>
-                        /* Remove the navbar's default rounded borders and increase the bottom margin */
-            .navbar {
-              margin-bottom: 50px;
-              border-radius: 0;
-            }
-
-            /* Remove the jumbotron's default bottom margin */
-             .jumbotron {
-              margin-bottom: 0;
-            }
-
-            /* Add a gray background color and some padding to the footer */
-            footer {
-              background-color: #f2f2f2;
-              padding: 25px;
-            }
-
-        </style>
-
+        <title>Fenrir's Page (Work in Progress)</title>
     </head>
-<body>
 
-    <div class="jumbotron">
-      <div class="container text-center">
-        <h1>Home</h1>  </div>
+<div ng-app="myApp">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#section1">Dennis Ljeti</a>
     </div>
-
-    <div class="row">
-        <div class="col-md-12">
-         <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-            <div class="navbar-header">
-
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-
-              <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects and Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-
-            </div>
-         </div>
-        </nav>
-        </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section2">Experience</a></li>
+          <li><a href="#section3">Projects</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+</nav>
 
-        <div class="col-md-4">
-            <p class="lead">Hey there,</p>
-            <p>Welcome to my Github page. My name's Dennis, and while there isn't much here at the moment, why not stick around?</p>
+<section id="section1" class="container-fluid">
+    <h1 id="title" class="text-center">Dennis Ljeti</h1>
+    <p id="subtitle" class="text-center">Junior Web Developer and Game Designer!</p>
+</section>
+
+<section id="section2" class="container-fluid">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-md-4">
+                <i class="fa fa-university" id="section2Header" aria-hidden="true">  My School:</i>
+                    <ul id="listItems">
+                        <li>Student attending Western University, pursuing an Honours Specialization in Computer Science and a Minor in Game Design.</li>
+                        <li>Developed apps for Fitbit and Schulich Medicine, as well as developing the independent sidescrolling video game "Polarity" as a creative lead and architect.</li>
+                        <li>Experienced developer of Java, C, and C++ applications. Practiced, tried, and tested in HTML, CSS, and AngularJS.</li>
+                    </ul>
+            </div>
+            <div class="col col-md-4">
+                <i class="fa fa-laptop" id="section2Header" aria-hidden="true">  My Work:</i>
+                    <ul id="listItems">
+                        <li>Independently developed stylized templates for personal use on forums.</li>
+                        <li>Experience with front end development as a software developer at Ericsson Mississauga.</li>
+                    </ul>
+            </div>
+            <div class="col col-md-4">
+                <i class="fa fa-heart" id="section2Header" aria-hidden="true">  My Hobbies:</i>
+                    <ul id="listItems">
+                        <li>Playing, reading about, and making games!</li>
+                        <li>Writing and running stories and scenarios for Dungeons & Dragons Players.</li>
+                        <li>Discussion and debate. I'm always looking to learn new things!</li>
+                    </ul>
+            </div>
         </div>
+
+    </div>
+</section>
+
+<section id="section3" class="container-fluid">
+    <h1 id="title" class="text-center">Projects</h1>
+
+    <div class = "row">
+
+   <div class = "col-sm-6 col-md-3">
+        <h3 id="subtitle">Polarity</h3>
+            <div class = "thumbnail">
+                <img src = "img/Polarity.png" alt = "Polarity">
+            </div>
+
+            <div class = "text-info">
+            <p>Polarity is a Lovecraft inspired sidescrolling
+platformer written in Java. Dive into unravelling
+layers of reality and uncover new powers, and
+dark secrets...</p>
+            <a class = "btn btn-primary" role = "button">
+               Button
+            </a>
+         </p>
+      </div>
+
+   </div>
+
+
+</div>
+
+</section>
 
 </body>
+</div>
 </html>
