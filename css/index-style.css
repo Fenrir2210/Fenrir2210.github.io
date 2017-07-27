@@ -3,7 +3,7 @@
 {
     margin-bottom: 50px;
     border-radius: 0;
-    background-color: #A85BC8;
+    background-color: #01A2A6;
 }
 
 body
@@ -13,7 +13,7 @@ body
 
 a
 {
-    color: white;
+    color: #FFFFF0;
     font-family: 'Vollkorn', Georgia, Times, serif;
 }
 
@@ -27,13 +27,13 @@ p
 #section2Header
 {
     padding-top: 50px;
-    color: #47125D;
+    color: #2F2933;
     font-size: 18px;
 }
 
 #listItems
 {
-    color: #A85BC8;
+    color: #2F2933;
     font-size: 16px;
     font-family: 'Vollkorn', Georgia, Times, serif;
 }
@@ -44,11 +44,12 @@ p
     font-family: 'Vollkorn', Georgia, Times, serif;
     font-size: 26px;
     line-height: 25px;
+    color: #FFFFA6;
 }
 
 #title
 {
-    color: #47125D;
+    color: #FFFFF0;
     font-size: 64px;
     padding-top: 20px;
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -59,7 +60,7 @@ p
     padding-top:50px;
     height:275px;
     color: #fff;
-    background-color: #A85BC8;
+    background-color: #01A2A6;
 }
 
 #section2
@@ -67,7 +68,7 @@ p
     padding-top:15px;
     height:500px;
     color: #aaa;
-    background-color: #FFFFFF;
+    background-color: #FFFFF0;
 }
 
 #section3
@@ -75,5 +76,5 @@ p
     padding-top:15px;
     height:500px;
     color: #fff;
-    background-color: #A85BC8;
+    background-color: #01A2A6;
 }
